@@ -1,0 +1,129 @@
+/* It is created for general patterns */
+
+:root {
+  --font-size: 30px;
+  --padding-small: 8px;
+  --padding-large: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  /*research*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  list-style-type: none;
+}
+
+body {
+  background-image: url("images/background.png");
+}
+
+#header {
+  background-color: #ebebe3c4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+ul {
+  /* overflow: hidden; */
+}
+
+li {
+  float: left;
+  font-size: var(--font-size);
+}
+
+li a {
+  display: block;
+  padding: var(--padding-large);
+  font-size: var(--font-size);
+}
+
+li a:hover {
+  background-color: grey;
+  opacity: 0.3;
+  font-size: var(--font-size);
+}
+
+.unselected {
+  color: #5a4b42;
+}
+
+main {
+  flex-direction: column;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  padding: var(--padding-large);
+}
+
+#btn-scroll-to-top {
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  right: 0rem;
+  bottom: 1rem;
+  border-radius: 50%;
+  visibility: hidden;
+  text-align: center;
+  cursor: pointer;
+  background-color: #c9b09f;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-scroll-to-top:hover {
+  background-color: #ab998d;
+}
+
+#footer {
+  background-color: #ebebe3;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* border: 1px solid #ccc; */
+  /* gap: 16px; */
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  /* border-radius: 10px; */
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.img-card {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.button {
+  /* background-color: #007bff; */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  /* background-color: #0056b3; */
+  background-color: #a48d7d;
+}
