@@ -47,7 +47,7 @@ function displayCards(data) {
   console.log("Cardurile au fost generate. Reatașăm evenimentele pe butoane...");
 }
 
-// Funcția de încărcare a datelor
+// Fetch Data Function
 async function fetchData() {
   try {
     console.log("Încărcăm datele...");
