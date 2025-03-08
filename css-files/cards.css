@@ -27,14 +27,13 @@
   max-width: 350px;
   min-height: 250px;
   overflow: hidden;
+  align-items: center;
 
   background: rgba(245, 226, 200, 0.29);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2px);
--webkit-backdrop-filter: blur(2px);
-border: 1px solid rgba(245, 226, 200, 0.39);
-
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(245, 226, 200, 0.39);
 }
 
 .card p,
@@ -55,7 +54,7 @@ border: 1px solid rgba(245, 226, 200, 0.39);
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 35px 35px 0 0;
 }
 
 @media (min-width: 500px) {
