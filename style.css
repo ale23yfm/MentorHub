@@ -148,7 +148,7 @@ h3 {
 .button {
   background-color: var(--red);
   color: var(--beige);
-  padding: 10px 20px ;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -200,7 +200,7 @@ h3 {
 
 #email-button {
   position: fixed;
-  right: 20px; /* Poziționează butonul pe lateralul din dreapta */
+  right: 5px; /* Poziționează butonul pe lateralul din dreapta */
   top: 50%; /* Aliniază vertical la mijloc */
   transform: translateY(
     -50%
@@ -219,7 +219,7 @@ h3 {
 
 #instagram-button {
   position: fixed;
-  right: 20px; /* Poziționează butonul pe lateralul din dreapta */
+  right: 5px; /* Poziționează butonul pe lateralul din dreapta */
   top: 55%;
   background-color: var(--lila);
   transform: translateY(-50%);
@@ -267,6 +267,14 @@ h3 {
     height: 4rem;
     right: 1rem;
     bottom: 4rem;
+  }
+
+  #email-button {
+    right: 20px;
+  }
+
+  #instagram-button {
+    right: 20px;
   }
 }
 
