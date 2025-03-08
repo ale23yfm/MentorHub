@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MentorHub</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="css-files/community.css" /> -->
-    <!-- <link rel="stylesheet" href="css-files/mobile.css" /> -->
+    <link rel="stylesheet" href="css-files/cards.css" />
+    <link rel="stylesheet" href="css-files/buttons.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -22,18 +22,14 @@
         </nav>
     </header>
     <main>
-        <h1>Educație Fără Bariere <wbr /> Meditații la un Click Distanță</h1>
-        <!-- Butonul cu iconul de instagram -->
-        
+        <h1>Educație Fără Bariere - Meditații la un Click Distanță</h1>
         <div class="grid-container" id="cardContainer">
         </div>
-        
         <a href="https://www.instagram.com/_mentor_hub_/" target="_blank">
             <button id="instagram-button">
                 <i class="fab fa-instagram"></i>
             </button>
         </a>
-        <!-- Butonul cu iconul de email -->
         <a href="mailto:voluntariat.meditatii@outlook.com">
             <button id="email-button">
                 <i class="fas fa-envelope"></i>
@@ -41,7 +37,7 @@
         </a>
     </main>
     <button id="btn-scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i> <!-- Iconul săgeată pentru scroll -->
+        <i class="fas fa-arrow-up"></i> 
     </button>
     <footer id="footer">
         <p>© <span id="current-year">2025</span> - Ifrim Alexandra | Proiect de atestat web</p>
@@ -50,7 +46,6 @@
     <script src="data/data.js"></script>
     <script src="data/dataFetcher.js"></script>
     <script>
-        // Update the year dynamically
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>

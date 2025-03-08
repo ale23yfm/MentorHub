@@ -1,0 +1,90 @@
+/* It contains styles for instagram button, e-mail button and scroll up button */
+
+#btn-scroll-to-top {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  right: 0.3rem;
+  bottom: 5rem;
+  visibility: hidden;
+  cursor: pointer;
+  background-color: var(--lila);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+}
+
+#btn-scroll-to-top:hover {
+  background-color: var(--coffee);
+}
+
+#email-button,
+#instagram-button {
+  position: fixed;
+  right: 5px;
+  top: 47%;
+  transform: translateY(-50%);
+  background-color: var(--lila);
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 35px;
+  height: 35px;
+}
+
+#instagram-button {
+  top: 53%;
+}
+
+.text #email-button,
+.text #instagram-button {
+  left: 42%;
+  top: 85%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.text #instagram-button {
+  left: 58%;
+}
+
+@media (min-width: 768px) {
+  #btn-scroll-to-top {
+    width: 4rem;
+    height: 4rem;
+    right: 1rem;
+    bottom: 4rem;
+  }
+
+  #email-button {
+    right: 20px;
+  }
+
+  #instagram-button {
+    right: 20px;
+  }
+
+  .text #email-button {
+    left: 46%;
+  }
+
+  .text #instagram-button {
+    left: 54%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text #email-button {
+    left: 47%;
+  }
+
+  .text #instagram-button {
+    left: 53%;
+  }
+}

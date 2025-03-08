@@ -1,15 +1,6 @@
 :root {
-  --font-size-sm: 16px;
   --font-size-md: 18px;
   --font-size-lg: 24px;
-  --font-size-xl: 30px;
-
-  --padding-small: 8px;
-  --padding-large: 14px;
-
-  /* brakepoints */
-  --breakpoint-tablet-size: 768px;
-  --breakpoint-laptop-sm-size: 1024px;
 
   /* colors */
   --black: #1c171b;
@@ -32,10 +23,7 @@
 
 body,
 html {
-  margin: 0;
-  padding: 0;
   height: 100%;
-  /* background-image: url('assets/background.png'); */
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -44,9 +32,6 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-
-  /* de schimbat font family */
-  font-family: "Spectral", "Rubik", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -61,11 +46,6 @@ html {
 }
 
 /* NAV STYLES */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 nav ul li {
   display: inline;
   margin-right: 10px;
@@ -97,7 +77,7 @@ main {
 
 h1 {
   font-size: var(--font-size-lg);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: var(--red);
 }
 
@@ -105,6 +85,7 @@ h2 {
   max-width: 90%;
   font-size: var(--font-size-md);
   margin-bottom: 10px;
+  margin-top: 5px;
   color: var(--black);
   padding-bottom: 5px;
 }
@@ -113,139 +94,10 @@ h3 {
   color: var(--background);
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  max-width: 85%;
-}
-
-/* CARD STYLES */
-.card {
-  background-color: var(--coffee);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  padding: 20px;
-  border-radius: 30px;
-
-  background: rgba(171, 153, 141, 0.58);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-}
-
-.img-card {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-
-#complete,
-.button {
-  background-color: var(--red);
-  color: var(--beige);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#complete:hover,
-.button:hover {
-  background-color: var(--beige);
-  color: var(--red);
-}
-
-.complete-button {
-  background-color: var(--red);
-  color: var(--beige);
-}
-
-.complete-button:hover {
-  background-color: var(--beige);
-  color: var(--red);
-}
-
 /* FOOTER STYLES */
 #footer {
   background-color: var(--lila);
-  text-align: center;
   padding: 10px;
-}
-
-#btn-scroll-to-top {
-  width: 3rem;
-  height: 3rem;
-  position: fixed;
-  right: 0.3rem;
-  bottom: 5rem;
-  visibility: hidden;
-  text-align: center;
-  cursor: pointer;
-  background-color: var(--lila);
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20%;
-}
-
-#btn-scroll-to-top:hover {
-  background-color: var(--coffee);
-}
-
-#email-button {
-  position: fixed;
-  right: 5px; /* Poziționează butonul pe lateralul din dreapta */
-  top: 50%; /* Aliniază vertical la mijloc */
-  transform: translateY(
-    -50%
-  ); /* Ajustează poziția pentru a fi exact la mijloc */
-  background-color: var(--lila);
-  color: white;
-  padding: 10px 10px;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 35px;
-}
-
-#instagram-button {
-  position: fixed;
-  right: 5px; /* Poziționează butonul pe lateralul din dreapta */
-  top: 55%;
-  background-color: var(--lila);
-  transform: translateY(-50%);
-  color: white;
-  padding: 10px 10px 10px 10px;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 35px;
-}
-
-@media (min-width: 500px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 90%;
-  }
-
-  /* .grid-container>.card:last-child:nth-child(odd) {
-    grid-column: 1 / 2;
-    justify-self: center;
-
-  } */
 }
 
 @media (min-width: 768px) {
@@ -256,28 +108,4 @@ h3 {
   nav ul li {
     margin-right: 20px;
   }
-
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 80%;
-  }
-
-  #btn-scroll-to-top {
-    width: 4rem;
-    height: 4rem;
-    right: 1rem;
-    bottom: 4rem;
-  }
-
-  #email-button {
-    right: 20px;
-  }
-
-  #instagram-button {
-    right: 20px;
-  }
 }
-
-/* Media query for laptop */
-/* @media (min-width: 768px) {
-} */

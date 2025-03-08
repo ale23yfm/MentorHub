@@ -25,7 +25,7 @@ const mentorsData = [
     subjects: ["Chimie", "Limba Engleză"],
   },
   {
-    name: "Tablan Andrei Damian",
+    name: "Tablan Damian",
     image: "assets/Volunteers/Tablan-Damian.jpg",
     subjects: ["C#", "Șah"],
   },
