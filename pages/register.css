@@ -18,10 +18,11 @@ h1 {
   max-width: 600px;
   text-align: center;
   margin-top: 20%;
+  font-size: var( --font-size-md);
 }
 
 #complete {
-  margin-top: 20px;
+  margin-top: 20px; 
 }
 
 @media (min-width: 1024px) {

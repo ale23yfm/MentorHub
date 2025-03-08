@@ -17,7 +17,7 @@
   justify-content: space-between;
   padding: 20px;
   border-radius: 16px;
-  background: rgba(171, 153, 141, 0.58);
+  background: var(--coffee);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -39,7 +39,7 @@
 
 .card h2 {
   width: 100%;
-  margin: 0 auto 10px auto;
+  margin: 10px auto 10px auto;
   display: block;
 }
 
@@ -48,32 +48,6 @@
   height: auto;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
-}
-
-#complete,
-.button {
-  background-color: var(--red);
-  color: var(--beige);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#complete:hover,
-.button:hover {
-  background-color: var(--beige);
-  color: var(--red);
-}
-
-.complete-button {
-  background-color: var(--red);
-  color: var(--beige);
-}
-
-.complete-button:hover {
-  background-color: var(--beige);
-  color: var(--red);
 }
 
 @media (min-width: 500px) {

@@ -1,4 +1,4 @@
-// Funcționalitatea pentru butonul de scroll
+// Scroll button
 const scrollToTopBtn = document.getElementById("btn-scroll-to-top");
 
 scrollToTopBtn.addEventListener("click", function () {
@@ -15,3 +15,6 @@ document.addEventListener("scroll", function () {
     scrollToTopBtn.style.visibility = "hidden";
   }
 });
+
+// Update the year
+document.getElementById('current-year').textContent = new Date().getFullYear();

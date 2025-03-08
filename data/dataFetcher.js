@@ -1,32 +1,32 @@
-// Funcția pentru a afișa cardurile
+// Cards
 function displayCards(data) {
   const container = document.getElementById("cardContainer");
-  container.innerHTML = ""; // Șterge orice conținut anterior
+  container.innerHTML = ""; 
 
   data.forEach((item) => {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    // Creare imagine
+    // Volunteer's image
     const image = document.createElement("img");
     image.classList.add("img-card");
     image.src = item.image;
     image.alt = item.name;
     card.appendChild(image);
 
-    // Creare nume mentor
+    // Volunteer's name
     const name = document.createElement("h2");
     name.textContent = item.name;
     card.appendChild(name);
 
-    // Creare subiecte
+    // Subjects
     item.subjects.forEach((subject) => {
       const subjectElement = document.createElement("h3");
       subjectElement.textContent = subject;
       card.appendChild(subjectElement);
     });
 
-    // Creare buton de contact
+    // Contact Button
     const button = document.createElement("a");
     button.classList.add("button");
     button.textContent = "Contactează";
@@ -51,7 +51,7 @@ function displayCards(data) {
 async function fetchData() {
   try {
     console.log("Încărcăm datele...");
-    await displayCards(mentorsData); // Dacă mentorsData este definit
+    await displayCards(mentorsData); 
   } catch (error) {
     console.error("Eroare la încărcarea datelor:", error);
     document.getElementById("cardContainer").innerHTML = `<p style="color: red;">Nu s-au putut încărca datele.</p>`;

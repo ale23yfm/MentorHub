@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 20%;
+  border-style: none;
 }
 
 #btn-scroll-to-top:hover {
@@ -27,7 +28,8 @@
   top: 47%;
   transform: translateY(-50%);
   background-color: var(--lila);
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
+  justify-content: center;
   border: none;
   cursor: pointer;
   display: flex;
@@ -52,6 +54,28 @@
 
 .text #instagram-button {
   left: 58%;
+}
+
+.icon-container i {
+  font-size: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+#complete,
+.button {
+  background-color: var(--red);
+  color: var(--beige);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#complete:hover,
+.button:hover {
+  background-color: var(--beige);
+  color: var(--red);
 }
 
 @media (min-width: 768px) {
