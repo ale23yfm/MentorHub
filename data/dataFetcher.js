@@ -51,7 +51,7 @@ function displayCards(data) {
 async function fetchData() {
   try {
     console.log("Încărcăm datele...");
-    await displayCards(mentorsData); 
+    displayCards(mentorsData); 
   } catch (error) {
     console.error("Eroare la încărcarea datelor:", error);
     document.getElementById("cardContainer").innerHTML = `<p style="color: red;">Nu s-au putut încărca datele.</p>`;
