@@ -4,38 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Maybe helps calendly -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://calendly.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://assets.calendly.com;">
     <title>MentorHub</title>
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="stylesheet" href="css-files/community.css" /> -->
     <!-- <link rel="stylesheet" href="css-files/mobile.css" /> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header id="header">
         <nav>
             <ul>
-                <li><a href="index.html">SMART Mentori</a></li>
+                <li><a href="index.html"><strong>SMART Mentori</strong></a></li>
                 <li><a class="unselected" href="pages/register.html">Înscrieri</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Educație Fără Bariere – Meditații la un Click Distanță</h1>
-        <!-- <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, praesentium veniam minima aut qui corrupti assumenda nostrum eveniet eum ex!</h2> -->
-        <!-- <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, praesentium veniam minima aut qui corrupti assumenda nostrum eveniet eum ex!</h2> -->
+        <h1>Educație Fără Bariere <wbr /> Meditații la un Click Distanță</h1>
+        <!-- Butonul cu iconul de instagram -->
+        <a href="https://www.instagram.com/_mentor_hub_/" target="_blank">
+            <button id="instagram-button">
+                <i class="fab fa-instagram"></i>
+            </button>
+        </a>
+        <!-- Butonul cu iconul de email -->
+        <a href="mailto:voluntariat.meditatii@outlook.com">
+            <button id="email-button">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
+
         <div class="grid-container" id="cardContainer">
         </div>
     </main>
-    <button id="btn-scroll-to-top">^</button>
+    <button id="btn-scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i> <!-- Iconul săgeată pentru scroll -->
+    </button>
     <footer id="footer">
-        <p>© 2025 - Ifrim Alexandra | Proiect de atestat web</p>
+        <p>© <span id="current-year">2025</span> - Ifrim Alexandra | Proiect de atestat web</p>
     </footer>
     <script src="script.js"></script>
     <script src="data/data.js"></script>
     <script src="data/dataFetcher.js"></script>
+    <script>
+        // Update the year dynamically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

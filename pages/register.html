@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MentorHub</title>
-    <!-- <link rel="stylesheet" href="css-files/style.css" /> -->
+    <link rel="stylesheet" href="../style.css" />
     <!-- <link rel="stylesheet" href="css-files/signup.css" /> -->
     <!-- <link rel="stylesheet" href="css-files/mobile.css" /> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <nav>
             <ul>
                 <li><a class="unselected" href="../index.html">SMART Mentori</a></li>
-                <li><a href="register.html">Înscrieri</a></li>
+                <li><a href="pages/register.html"><strong>Înscrieri</strong></a></li>
             </ul>
         </nav>
     </header>
@@ -32,11 +33,28 @@
             <a href="https://forms.gle/udkYvpK6mop1NCBY9" style="text-decoration: none"
                 class="complete-button">Completează</a>
         </div>
+
+        <!-- Butonul cu iconul de instagram -->
+        <a href="https://www.instagram.com/_mentor_hub_/" target="_blank">
+            <button id="instagram-button">
+                <i class="fab fa-instagram"></i>
+            </button>
+        </a>
+        <!-- Butonul cu iconul de email -->
+        <a href="mailto:voluntariat.meditatii@outlook.com">
+            <button id="email-button">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
     </main>
     <button id="btn-scroll-to-top">^</button>
     <footer id="footer">
-        <p>© 2025 - Ifrim Alexandra | Proiect de atestat web</p>
+        <p>© <span id="current-year">2025</span> - Ifrim Alexandra | Proiect de atestat web</p>
     </footer>
+    <script>
+        // Update the year dynamically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

@@ -31,15 +31,20 @@ function displayCards(data) {
     button.classList.add("button");
     button.textContent = "Contactează";
     button.href = "#";
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.open(
+        "https://zcal.co/mentorhub/120min", 
+        "popupWindow", 
+        "width=600,height=600,left=100,top=100"
+      );
+    });
     card.appendChild(button);
 
     container.appendChild(card);
   });
 
-  console.log(
-    "Cardurile au fost generate. Reatașăm evenimentele pe butoane..."
-  );
-  setupContactButtons(); // Asigură-te că butoanele au evenimentele atașate
+  console.log("Cardurile au fost generate. Reatașăm evenimentele pe butoane...");
 }
 
 // Funcția de încărcare a datelor
@@ -49,9 +54,7 @@ async function fetchData() {
     await displayCards(mentorsData); // Dacă mentorsData este definit
   } catch (error) {
     console.error("Eroare la încărcarea datelor:", error);
-    document.getElementById(
-      "cardContainer"
-    ).innerHTML = `<p style="color: red;">Nu s-au putut încărca datele.</p>`;
+    document.getElementById("cardContainer").innerHTML = `<p style="color: red;">Nu s-au putut încărca datele.</p>`;
   }
 }
 
