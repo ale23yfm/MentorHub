@@ -19,6 +19,8 @@ h1 {
   text-align: center;
   margin-top: 20%;
   font-size: var( --font-size-md);
+  display: flex;
+  flex-direction: column;
 }
 
 #complete {

@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  border-radius: 16px;
+  border-radius: 45px;
   background: var(--coffee);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(0px);
@@ -27,6 +27,14 @@
   max-width: 350px;
   min-height: 250px;
   overflow: hidden;
+
+  background: rgba(245, 226, 200, 0.29);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2px);
+-webkit-backdrop-filter: blur(2px);
+border: 1px solid rgba(245, 226, 200, 0.39);
+
 }
 
 .card p,
