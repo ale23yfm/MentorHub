@@ -60,20 +60,20 @@
   top: 56%;
 }
 
-.text #email-button,
-.text #instagram-button,
-.text #whatsapp-button {
+#register-page #email-button,
+#register-page #instagram-button,
+#register-page #whatsapp-button {
   left: 50%;
   top: 85%;
   bottom: 20px;
   transform: translateX(-50%);
 }
 
-.text #whatsapp-button {
+#register-page #whatsapp-button {
   left: 70%;
 }
 
-.text #instagram-button {
+#register-page #instagram-button {
   left: 30%;
 }
 
@@ -99,11 +99,11 @@
 }
 
 @media (min-width: 425px) {
-  .text #instagram-button {
+  #register-page #instagram-button {
     left: 35%;
   }
 
-  .text #whatsapp-button {
+  #register-page #whatsapp-button {
     left: 65%;
   }
 }
@@ -122,31 +122,31 @@
     right: 20px;
   }
 
-  .text #instagram-button {
+  #register-page #instagram-button {
     left: 40%;
   }
 
-  .text #whatsapp-button {
+  #register-page #whatsapp-button {
     left: 60%;
   }
 }
 
 @media (min-width: 1024px) {
-  .text #instagram-button {
+  #register-page #instagram-button {
     left: 43%;
   }
 
-  .text #whatsapp-button {
+  #register-page #whatsapp-button {
     left: 57%;
   }
 }
 
 @media (min-width: 1440px) {
-  .text #instagram-button {
+  #register-page #instagram-button {
     left: 45%;
   }
 
-  .text #whatsapp-button {
+  #register-page #whatsapp-button {
     left: 55%;
   }
 }
