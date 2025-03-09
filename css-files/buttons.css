@@ -1,4 +1,17 @@
-/* It contains styles for instagram button, e-mail button and scroll up button */
+/* It contains styles for instagram button, e-mail button, whatssapp button, "Contactează" button and scroll up button */
+
+/* Scroll to Top Button */
+
+#btn-scroll-to-top,
+#email-button,
+#instagram-button,
+#whatsapp-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
 
 #btn-scroll-to-top {
   width: 3rem;
@@ -6,40 +19,40 @@
   position: fixed;
   right: 0.3rem;
   bottom: 5rem;
-  visibility: hidden;
-  cursor: pointer;
   background-color: var(--lila);
   font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 20px;
   border-style: none;
 }
 
 #btn-scroll-to-top:hover {
   background-color: var(--coffee);
+  color: var(--beige);
+}
+
+/* Social Media Buttons */
+
+.icon-container i {
+  font-size: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
 }
 
 #email-button,
-#instagram-button, #whatsapp-button {
+#instagram-button,
+#whatsapp-button {
   position: fixed;
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
   background-color: var(--lila);
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 40px;
   height: 40px;
 }
 
-#instagram-button{
+#instagram-button {
   top: 44%;
 }
 
@@ -48,14 +61,15 @@
 }
 
 .text #email-button,
-.text #instagram-button, .text #whatsapp-button {
+.text #instagram-button,
+.text #whatsapp-button {
   left: 50%;
   top: 85%;
   bottom: 20px;
   transform: translateX(-50%);
 }
 
-.text #whatsapp-button{
+.text #whatsapp-button {
   left: 70%;
 }
 
@@ -63,20 +77,18 @@
   left: 30%;
 }
 
-.icon-container i {
-  font-size: 1.5rem;
-  color: var(--black);
-  cursor: pointer;
-}
+/* "Contactează" Button */
 
 #complete,
 .button {
+  font-size: var(--font-size-md);
   background-color: var(--red);
   color: var(--beige);
   padding: 10px 20px;
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  margin: 10px 0;
   width: 150px;
 }
 
@@ -91,11 +103,10 @@
     left: 35%;
   }
 
-  .text #whatsapp-button{
+  .text #whatsapp-button {
     left: 65%;
   }
 }
-
 
 @media (min-width: 768px) {
   #btn-scroll-to-top {
@@ -105,7 +116,9 @@
     bottom: 4rem;
   }
 
-  #email-button, #whatsapp-button, #instagram-button {
+  #email-button,
+  #whatsapp-button,
+  #instagram-button {
     right: 20px;
   }
 
@@ -113,7 +126,7 @@
     left: 40%;
   }
 
-  .text #whatsapp-button{
+  .text #whatsapp-button {
     left: 60%;
   }
 }
@@ -123,7 +136,7 @@
     left: 43%;
   }
 
-  .text #whatsapp-button{
+  .text #whatsapp-button {
     left: 57%;
   }
 }
@@ -133,7 +146,7 @@
     left: 45%;
   }
 
-  .text #whatsapp-button{
+  .text #whatsapp-button {
     left: 55%;
   }
 }
