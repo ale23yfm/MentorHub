@@ -28,9 +28,9 @@ MentorHub/
 
 ## ⚙️ Technologies Used
 
-- **HTML5 (semantic)** – Structured content for accessibility and clarity
+- **HTML5** – Structured content for accessibility and clarity
 - **CSS3** – Responsive design with custom properties, grid/flexbox layouts, and media queries
-- **JavaScript (Vanilla)** – DOM manipulation, asynchronous data rendering, event handling
+- **JavaScript** – vanilla JavaScript used for DOM manipulation, asynchronous data rendering, and event handling
 - **JSON (via data.js)** – Structured data for mentors
 - **Git + GitHub Pages** – Version control and static deployment
 - **Zcal Integration** – External calendar popup for scheduling sessions
